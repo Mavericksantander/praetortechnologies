@@ -4,25 +4,25 @@
    ========================================================================== */
 
 :root{
-  --bg:            #0A0C0E;
+  --bg:            #0B0D10;
   --bg-panel:      #101318;
   --bg-panel-2:    #14181D;
   --line:          #23282E;
   --line-bright:   #34404A;
 
-  --steel:         #72869A;
-  --steel-bright:  #96ACC0;
-  --steel-dim:     #4E5D6B;
+  --steel:         #5B7A99;
+  --steel-bright:  #7E9AB6;
+  --steel-dim:     #44607B;
   --amber:         #B08A4E;
   --green:         #6FA286;
 
   --text:          #C7CDD3;
   --text-dim:      #767F88;
-  --text-bright:   #F2F4F6;
+  --text-bright:   #F5F6F7;
 
-  --font-display:  'Space Grotesk', sans-serif;
+  --font-display:  'Inter Tight', 'IBM Plex Sans Condensed', sans-serif;
   --font-mono:      'IBM Plex Mono', monospace;
-  --font-body:      'Inter', sans-serif;
+  --font-body:      'IBM Plex Sans', sans-serif;
 
   --wrap: 1180px;
 }
@@ -1056,3 +1056,7 @@ p{ margin: 0; }
   .telemetry-inner{ font-size: 10.5px; gap: 12px; }
   .timeline-item{ flex-wrap: wrap; }
 }
+/* Marca oficial (logo en archivo, sin componer la Æ con tipografía) */
+.logo-img{ display:block; height:36px; width:auto; }
+.footer-logo .logo-img{ height:50px; }
+h1,h2,h3{ text-transform: uppercase; letter-spacing: 0.06em; }
