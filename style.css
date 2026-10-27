@@ -1069,3 +1069,22 @@ h1,h2,h3{ text-transform: uppercase; letter-spacing: 0.06em; }
   color: var(--text-dim);
 }
 .product-note strong{ color: var(--text-bright); font-weight: 500; }
+
+/* ---- tesis ---- */
+.tesis{ padding: 120px 0 100px; }
+.tesis-wrap{ max-width: 820px; }
+.tesis-download{ margin: 24px 0 40px; }
+.tesis-body{ color: var(--text); line-height: 1.75; font-size: 16.5px; }
+.tesis-body h1{ font-size: clamp(32px,5vw,48px); color: var(--text-bright); line-height: 1.1; margin: 0 0 16px; }
+.tesis-body h2{ font-size: 24px; color: var(--text-bright); margin: 64px 0 16px; }
+.tesis-body h3{ font-size: 18px; color: var(--text-bright); margin: 40px 0 12px; }
+.tesis-body h4{ font-family: var(--font-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--text-dim); margin: 32px 0 12px; }
+.tesis-body p, .tesis-body ul, .tesis-body ol{ margin: 0 0 18px; }
+.tesis-body ul, .tesis-body ol{ padding-left: 22px; }
+.tesis-body strong{ color: var(--text-bright); }
+.tesis-body blockquote{ margin: 24px 0; padding: 12px 20px; border-left: 2px solid var(--line); color: var(--text-dim); }
+.tesis-body hr{ border: 0; border-top: 1px solid var(--line); margin: 56px 0; }
+.tesis-body a{ color: var(--text-bright); text-decoration: underline; word-break: break-word; }
+.tesis-body table{ width: 100%; border-collapse: collapse; margin: 0 0 24px; font-size: 14px; display: block; overflow-x: auto; }
+.tesis-body th, .tesis-body td{ border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+.tesis-body th{ color: var(--text-bright); font-weight: 500; }
