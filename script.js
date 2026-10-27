@@ -42,3 +42,9 @@ if(prefersReducedMotion || !('IntersectionObserver' in window)){
 
   revealTargets.forEach(el => observer.observe(el));
 }
+// ---- hero video: respect reduced motion ----
+const heroVideo = document.querySelector('.hero-video');
+if(heroVideo && prefersReducedMotion){
+  heroVideo.pause();
+  heroVideo.removeAttribute('autoplay');
+}
