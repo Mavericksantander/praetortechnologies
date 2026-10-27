@@ -509,6 +509,7 @@ p{ margin: 0; }
 }
 
 .status-live{ color: var(--green); border-color: rgba(111,162,134,0.4); }
+.status-neutral{ color: var(--text-dim); border-color: var(--line-bright); }
 .status-dev{ color: var(--amber); border-color: rgba(176,138,78,0.4); }
 .status-fw{ color: var(--steel-bright); border-color: rgba(150,172,192,0.4); }
 
