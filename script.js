@@ -1,16 +1,3 @@
-// ---- live UTC clock (telemetry strip, appears twice for marquee loop) ----
-function tick(){
-  const now = new Date();
-  const h = String(now.getUTCHours()).padStart(2,'0');
-  const m = String(now.getUTCMinutes()).padStart(2,'0');
-  const s = String(now.getUTCSeconds()).padStart(2,'0');
-  document.querySelectorAll('.clock').forEach(el => {
-    el.textContent = `${h}:${m}:${s}`;
-  });
-}
-tick();
-setInterval(tick, 1000);
-
 // ---- footer year ----
 document.querySelectorAll('.year').forEach(el => {
   el.textContent = new Date().getFullYear();
@@ -24,12 +11,14 @@ if(toggle && nav){
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('nav-open');
     toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
   });
 
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('nav-open');
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menú');
     });
   });
 }

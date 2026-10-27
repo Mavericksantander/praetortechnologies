@@ -571,7 +571,7 @@ p{ margin: 0; }
   justify-content: center;
 }
 
-/* ---- FleetOps mockup device ---- */
+/* ---- mockup device ---- */
 
 .mockup-device{
   width: 100%;
@@ -695,7 +695,7 @@ p{ margin: 0; }
   100%{ transform: scale(2.2); opacity: 0; }
 }
 
-/* ---- flow diagrams (Gateway / Pro Praetore) ---- */
+/* ---- flow diagrams ---- */
 
 .flow-diagram{
   display: flex;
@@ -1020,8 +1020,9 @@ p{ margin: 0; }
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: rgba(10,12,14,0.98);
+    background: var(--bg);
     border-bottom: 1px solid var(--line);
+    z-index: 100;
   }
   .main-nav.nav-open{ display: flex; }
   .main-nav a{
@@ -1060,3 +1061,11 @@ p{ margin: 0; }
 .logo-img{ display:block; height:36px; width:auto; }
 .footer-logo .logo-img{ height:50px; }
 h1,h2,h3{ text-transform: uppercase; letter-spacing: 0.06em; }
+
+.product-note{
+  margin-top: 32px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.product-note strong{ color: var(--text-bright); font-weight: 500; }
