@@ -156,6 +156,30 @@
             </ul>
           </div>
         </div>
+        <figure class="demo">
+          <div class="demo-bar">
+            <span>Demo · Verificación de un recibo por un tercero</span>
+            <span>Datos de prueba · Salidas reales</span>
+          </div>
+          <div class="demo-screen">
+            <video class="demo-video" muted loop playsinline preload="none" poster="assets/praetore-demo-poster.jpg" aria-label="Grabación de terminal: un tercero verifica un recibo de praetore y el verificador lo acepta; al alterar un solo byte, lo rechaza.">
+              <source src="assets/praetore-demo.mp4" type="video/mp4">
+            </video>
+            <button class="demo-expand" type="button" aria-label="Ver demo en pantalla completa">Pantalla completa ↗</button>
+          </div>
+          <figcaption class="demo-steps">
+            <div class="demo-step">
+              <span class="demo-step-index">01</span>
+              <p>Un tercero verifica el recibo con la clave pública del atestador.</p>
+              <code class="demo-result demo-ok">OK · exit=0</code>
+            </div>
+            <div class="demo-step">
+              <span class="demo-step-index">02</span>
+              <p>Se altera un solo byte del contenido y se vuelve a verificar.</p>
+              <code class="demo-result demo-fail">EVIDENCE_FAIL · exit=1</code>
+            </div>
+          </figcaption>
+        </figure>
         <div class="flow-diagram" aria-label="Flujo: Políticas, Identidad, Agentes de IA, Evidencia">
           <div class="flow-node"><span>A</span>Políticas</div>
           <div class="flow-connector" aria-hidden="true"></div>

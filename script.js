@@ -60,3 +60,32 @@ if(heroVideo){
     heroVideo.play().catch(() => {});
   }
 }
+
+// ---- product demo: play from the start when it scrolls into view ----
+const demoVideo = document.querySelector('.demo-video');
+if(demoVideo){
+  if(!prefersReducedMotion && 'IntersectionObserver' in window){
+    new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          demoVideo.play().catch(() => {});
+        } else {
+          demoVideo.pause();
+        }
+      });
+    }, { threshold: 0.5 }).observe(demoVideo);
+  } else {
+    demoVideo.controls = true;
+  }
+
+  const expand = document.querySelector('.demo-expand');
+  if(expand){
+    expand.addEventListener('click', () => {
+      const fs = demoVideo.requestFullscreen || demoVideo.webkitEnterFullscreen;
+      if(fs){
+        fs.call(demoVideo);
+        demoVideo.play().catch(() => {});
+      }
+    });
+  }
+}
