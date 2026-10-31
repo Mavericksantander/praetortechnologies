@@ -967,3 +967,18 @@ p{ margin: 0; }
 .tesis-body th, .tesis-body td{ border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
 .tesis-body th{ color: var(--text-bright); font-weight: 500; }
 .tesis-body h1, .tesis-body h2, .tesis-body h3{ letter-spacing: -0.01em; line-height: 1.2; }
+
+/* Caso de uso praetore */
+.case-study{ background: var(--bg-panel); padding: 52px; position: relative; }
+.case-title{ font-family: var(--font-display); font-size: clamp(20px, 3vw, 28px); color: var(--text-bright); margin: 8px 0 16px; line-height: 1.2; overflow-wrap: anywhere; }
+.case-metrics{ list-style: none; margin: 28px 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.case-metric{ display: flex; flex-direction: column; gap: 8px; padding: 24px; background: var(--bg); border: 1px solid var(--line); border-top: 2px solid var(--amber); min-width: 0; }
+.case-metric:nth-child(2){ border-top-color: var(--green); }
+.case-metric:nth-child(3){ border-top-color: var(--line-bright); }
+.case-value{ font-family: var(--font-display); font-size: clamp(32px, 5vw, 48px); font-weight: 700; color: var(--text-bright); line-height: 1; }
+.case-label{ color: var(--text-bright); font-size: 16px; }
+.case-detail{ font-family: var(--font-mono); font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+.case-scope{ font-family: var(--font-mono); font-size: 13px; color: var(--text); margin: 0; }
+.case-scope strong{ color: var(--text-bright); font-weight: 500; }
+@media (max-width: 960px){ .case-metrics{ grid-template-columns: 1fr; } }
+@media (max-width: 600px){ .case-study{ padding: 32px 20px; } }
